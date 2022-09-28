@@ -6,7 +6,6 @@ Rails.application.routes.draw do
   resources :invoices
   resources :customers
 
-
   resources :merchants do
     resources :items
     resources :invoices, only: %i[index show update]
@@ -14,7 +13,7 @@ Rails.application.routes.draw do
   end
 
   namespace :admin do
-    get '/', to: 'admin#dashboard'
+    get '/', to: 'merchants#index'
 
     resources :invoices, only: %i[index show update]
     resources :merchants, only: [:index, :show, :edit, :update, :new, :create ]
