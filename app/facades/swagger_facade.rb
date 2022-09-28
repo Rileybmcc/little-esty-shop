@@ -1,6 +1,6 @@
-require 'github_service'
+# require 'github_service'
 require 'json'
-require 'pry'
+# require 'pry'
 
 class SwaggerFacade
 

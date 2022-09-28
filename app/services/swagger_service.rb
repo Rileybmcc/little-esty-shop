@@ -1,5 +1,5 @@
 require 'httparty'
-require 'pry'
+# require 'pry'
 
 class SwaggerService
   def self.next_holidays
